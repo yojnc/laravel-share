@@ -128,6 +128,30 @@ class Share
     }
 
     /**
+     * @return $this
+     */
+    public function telegram()
+    {
+        $url = config('laravel-share.services.telegram.uri') . $this->url;
+
+        $this->buildLink('telegram', $url);
+
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    public function vk()
+    {
+        $url = config('laravel-share.services.vk.uri') . $this->url;
+
+        $this->buildLink('vk', $url);
+
+        return $this;
+    }
+
+    /**
      * Google Plus share link
      *
      * @return $this

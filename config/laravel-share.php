@@ -31,7 +31,13 @@ return [
         'whatsapp' => [
             'uri' => 'https://wa.me/?text=',
             'extra' => ['mini' => 'true']
-        ],         
+        ],
+        'vk' => [
+            'uri' => 'http://vk.com/share.php?url=',
+        ],
+        'telegram' => [
+            'https://telegram.me/share/url?url=',
+        ],
     ],
 
     /*
